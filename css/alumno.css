@@ -1,0 +1,263 @@
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+    --color-background: #2394a3ad
+}
+
+h1 {
+    font-family: "Fjalla One", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    text-shadow: #00000098 .1em .1em .2em
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.hero {
+    width: 100%;
+    height: 94vh;
+    max-height: auto;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+    overflow: hidden;
+    color: #fff
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc8;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    -webkit-filter: blur(2px);
+    filter: blur(2px)
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    height: 100rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 1rem 2rem #00000080;
+    box-shadow: 0 1rem 2rem #00000080;
+    z-index: -1
+}
+
+.nav {
+    --padding-container: 0;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1920px
+}
+
+.nav__logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.nav__logo {
+    max-width: 80px;
+    max-height: 80px
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    justify-items: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0000001a;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    max-width: 320px;
+    height: 350px;
+    margin-bottom: 20px
+}
+
+.card2 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    max-width: 320px;
+    height: 450px;
+    grid-column: 2/3;
+    margin-bottom: 20px
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr
+    }
+    .card,
+    .card2 {
+        grid-column: 1
+    }
+    .hero {
+        height: auto
+    }
+}
+
+.card h2,
+.card2 h2 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    background-color: #4cafef;
+    text-align: center;
+    font-family: "Cantarell", serif;
+    text-shadow: #00000096 2px 2px 4px;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 10px #0000001a;
+    box-sizing: border-box;
+    margin-bottom: 20px
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    color: #555;
+    font-family: "Fjalla One", sans-serif
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    box-shadow: inset 0 2px 5px #0000000d;
+    transition: border-color .2s;
+    margin: 10px auto;
+    margin-left: 5%;
+    width: 90%
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px #4caf5080
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    text-transform: uppercase;
+    position: center;
+    margin: 0 auto;
+    display: block;
+    font-family: "Cantarell", sans-serif;
+    box-shadow: #000000a2 2px 2px 4px
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41
+}
+
+.charlas-inscritas {
+    margin: 0 auto
+}
+
+.charlas-inscritas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.charlas-inscritas li {
+    padding: 10px;
+    background-color: #2e62b1;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #000;
+    font-size: 14px
+}
+
+footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: auto
+}
+
+.footer-content {
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #817e7e
+}
+
+.footer-content a {
+    color: #0056b3;
+    text-decoration: none
+}
+
+.footer-content a:hover {
+    color: #fff
+}
