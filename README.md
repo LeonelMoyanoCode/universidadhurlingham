@@ -24,9 +24,9 @@ El evento está compuesto por dos páginas principales:
 
 # Página del Alumno (alumno.html):
 
-* Sección para inscribirse en charlas/talleres a través de un formulario.
+* Sección para inscribirse en charlas/talleres a través de un formulario visual sin javascript se me pidio asi.
 
-* Sección para visualizar las charlas/talleres a los que ya se ha inscrito, con al menos dos opciones.
+* Sección para visualizar las charlas/talleres a los que ya se ha inscrito, con al menos dos opciones plenamente visual tambien se me pidio asi.
 
 * Menú funcional para volver a la página principal.
 
@@ -41,4 +41,3 @@ El evento está compuesto por dos páginas principales:
 
 * CSS3: Estilización y diseño responsivo.
 
-* JavaScript: Funcionalidades interactivas.
