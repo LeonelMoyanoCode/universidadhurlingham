@@ -7,6 +7,7 @@ Este proyecto universitario consiste en el desarrollo de una página web para un
 El evento está compuesto por dos páginas principales:
 
 # Página Principal (index.html):
+
 * Información introductoria del evento.
 
 * Video y/o audio de presentación.
@@ -19,9 +20,10 @@ El evento está compuesto por dos páginas principales:
 
 * Zona de login para estudiantes de la universidad (funcionalidad básica).
 
-
+  ![Vista previa del librojuego](multimedia/indexuniversidad.jpg)
 
 # Página del Alumno (alumno.html):
+
 * Sección para inscribirse en charlas/talleres a través de un formulario.
 
 * Sección para visualizar las charlas/talleres a los que ya se ha inscrito, con al menos dos opciones.
@@ -30,10 +32,11 @@ El evento está compuesto por dos páginas principales:
 
 * Pie de página replicado de la página principal.
 
+  ![Vista previa del librojuego](multimedia/loginuniversidad.jpg)
 
 
+# ✨ Tecnologías Utilizadas
 
-✨ Tecnologías Utilizadas
 * HTML5: Estructura de las páginas.
 
 * CSS3: Estilización y diseño responsivo.
